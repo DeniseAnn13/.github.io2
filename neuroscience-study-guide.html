@@ -1,461 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neuroscience Study Guide + Practice</title>
-  <style>
-    :root {
-      --bg: #f3f6fb;
-      --panel: #ffffff;
-      --ink: #1d2430;
-      --muted: #53657a;
-      --line: #dfe7f1;
-      --accent: #1f4e8c;
-      --accent-soft: #edf4ff;
-      --code: #f2f5fa;
-      --shadow: rgba(22, 53, 94, 0.08);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      color: var(--ink);
-      background: var(--bg);
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px 18px 72px;
-    }
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 0 18px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 26px;
-    }
-    .brand {
-      font-weight: 700;
-      color: var(--accent);
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
-    }
-    .nav a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 700;
-      margin-left: 12px;
-    }
-    .page {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      box-shadow: 0 3px 12px var(--shadow);
-      padding: 28px 32px 42px;
-    }
-    h1, h2, h3, h4 {
-      line-height: 1.25;
-      color: var(--ink);
-      margin-top: 1.8rem;
-    }
-    h1 { font-size: 2.25rem; margin-top: 0; }
-    h2 {
-      font-size: 1.8rem;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 8px;
-    }
-    h3 { font-size: 1.35rem; }
-    p, li { font-size: 1.02rem; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 18px 0;
-      background: #fff;
-    }
-    th, td {
-      border: 1px solid var(--line);
-      padding: 10px 12px;
-      vertical-align: top;
-      text-align: left;
-    }
-    th { background: var(--accent-soft); }
-    ul, ol { padding-left: 1.25rem; }
-    pre {
-      background: var(--code);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 16px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      font-family: Consolas, Monaco, monospace;
-      font-size: 0.92rem;
-      margin: 18px 0;
-    }
-    code {
-      background: var(--code);
-      border-radius: 5px;
-      padding: 2px 6px;
-      font-family: Consolas, Monaco, monospace;
-    }
-    .note {
-      background: #f9fafb;
-      border-left: 4px solid var(--accent);
-      padding: 12px 14px;
-      margin: 18px 0;
-      color: var(--muted);
-    }
-    .question {
-      border: 1px solid var(--line);
-      border-radius: 9px;
-      padding: 16px 18px;
-      margin: 16px 0;
-      background: #fafcff;
-    }
-    .question h3 { margin: 0 0 8px; }
-    details { margin-top: 10px; }
-    summary { cursor: pointer; color: var(--accent); font-weight: 700; }
-    .answer {
-      background: #f7f9fc;
-      border-radius: 7px;
-      padding: 10px 14px;
-      margin-top: 10px;
-    }
-    .diagram-box {
-      background: #f9fbff;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 14px;
-      margin: 16px 0;
-    }
-    a { color: var(--accent); }
-    @media (max-width: 700px) {
-      .page { padding: 18px 18px; }
-      .topbar { display: block; }
-      .nav { margin-top: 10px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="topbar">
-      <div class="brand">Neuroscience Study Guide + Practice</div>
-      <div class="nav">
-        <a href="#study-guide">Study guide</a>
-        <a href="#practice">Practice</a>
-        <a href="#mock-exam">Mock exam</a>
-        <a href="#diagrams">Diagrams</a>
-        <a href="/">Home</a>
+
+      <h2>High-Yield Final Review Sheet</h2>
+      <div class="note">
+        <strong>Fast exam strategy:</strong> define the term, explain how it works, state what it measures or tells us, and compare it to another method or structure.
       </div>
-    </div>
 
-    <div class="page">
-      <h1 id="study-guide">Neuroscience Study Guide</h1>
+      <h3>1. What is neuroscience?</h3>
+      <p>Neuroscience is the study of the nervous system: its structure, function, development, chemistry, disorders, and relationship to behavior and experience. It spans molecular, cellular, circuit, behavioral, and cognitive levels.</p>
 
-      <h2>1. Introduction: What is neuroscience and how do we study it?</h2>
-      <p><strong>Neuroscience</strong> is the scientific study of the nervous system: its structure, function, development, chemistry, disorders, and relationship to behavior and experience. It combines methods from biology, psychology, medicine, chemistry, physics, and computation.</p>
-      <p>Neuroscientists study questions at several levels: molecules, cells, circuits, behavior, and cognition.</p>
-
-      <h3>How do we study the living brain?</h3>
-      <table>
-        <thead><tr><th>Method</th><th>How it works</th><th>What it measures</th><th>Main limitation</th></tr></thead>
-        <tbody>
-          <tr><td><strong>CAT/CT</strong></td><td>Rotating X-rays are collected from many angles and a computer reconstructs cross-sectional images.</td><td>Anatomy and tissue-density differences; useful for detecting bleeding, fractures, and large structural changes.</td><td>Uses ionizing radiation; lower soft-tissue contrast than MRI.</td></tr>
-          <tr><td><strong>PET</strong></td><td>A radioactive tracer is administered and detectors map where it goes in the brain.</td><td>Metabolic or biochemical activity depending on the tracer (glucose use, receptor binding).</td><td>Radiation exposure; relatively low spatial and temporal resolution.</td></tr>
-          <tr><td><strong>MRI</strong></td><td>Strong magnetic fields and radiofrequency pulses create signals from hydrogen nuclei.</td><td>Detailed anatomy and tissue contrast without ionizing radiation.</td><td>Does not directly measure action potentials; movement and implants can limit use.</td></tr>
-        </tbody>
-      </table>
-      <p><strong>Important distinction:</strong> Functional MRI (fMRI) measures changes in blood oxygenation and flow associated with neural activity. It is indirect, not a direct recording of firing in neurons.</p>
-
-      <h3>Lesion studies, drug studies, and genetic manipulations</h3>
-      <table>
-        <thead><tr><th>Approach</th><th>How it works</th><th>What it tells us</th><th>Cautions</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Lesion studies</strong></td><td>Study behavior after natural or experimental brain damage.</td><td>If function is impaired, the damaged area may be important for that function.</td><td>Damage may affect pathways and compensation.</td></tr>
-          <tr><td><strong>Drug studies</strong></td><td>Drugs alter receptors, enzymes, or signaling molecules.</td><td>Shows how chemical signaling contributes to behavior or physiology.</td><td>Drugs often have multiple targets and side effects.</td></tr>
-          <tr><td><strong>Genetic manipulations</strong></td><td>Genes are altered, silenced, or selectively expressed.</td><td>Tests whether a gene contributes to structure, function, or behavior.</td><td>Developmental compensation and off-target effects complicate interpretation.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Common brain myths and why they are wrong</h3>
+      <h3>2. Brain imaging methods</h3>
       <ul>
-        <li><strong>“We only use 10% of our brain.”</strong> False. Brain activity is widespread, and many regions are active even at rest.</li>
-        <li><strong>“People are either left-brained or right-brained.”</strong> Not in a simple sense; both hemispheres contribute to most tasks.</li>
-        <li><strong>“People have fixed learning styles.”</strong> Preferences may exist, but evidence does not support fixed learning-type labels as a major determinant of learning success.</li>
-        <li><strong>“Adult brains cannot change.”</strong> False. Neuroplasticity continues throughout life.</li>
-        <li><strong>“Brain scans can read thoughts.”</strong> No. They measure indirect signals, not direct thoughts or intentions.</li>
-        <li><strong>“A single brain area controls a complex behavior.”</strong> Most behaviors emerge from networks.</li>
+        <li><strong>CAT/CT:</strong> X-rays from many angles reconstruct cross-sectional images. Measures anatomy and tissue density. Best for fractures, bleeding, large structural changes. Limitation: radiation and lower soft-tissue contrast.</li>
+        <li><strong>PET:</strong> radioactive tracer tracks metabolism or receptor activity. Measures glucose use or neurotransmitter-related processes. Limitation: radiation and relatively low spatial/temporal resolution.</li>
+        <li><strong>MRI:</strong> magnetic fields and radio waves create detailed images of tissue. Measures anatomy and soft tissue structure. Limitation: indirect for neural activity.</li>
+        <li><strong>fMRI:</strong> indirect measure of activity through blood oxygenation changes (BOLD signal).</li>
       </ul>
 
-      <h2>2. Neuroanatomy</h2>
-      <h3>Divisions of the nervous system</h3>
-      <pre>Nervous system
-├── Central nervous system (CNS)
-│   ├── Brain — integrates information; perception, thought, emotion, and action
-│   └── Spinal cord — relays signals and coordinates reflexes
-└── Peripheral nervous system (PNS)
-    ├── Sensory (afferent) division — carries information toward the CNS
-    └── Motor (efferent) division — carries commands away from the CNS
-        ├── Somatic nervous system — voluntary movement and skeletal muscle
-        └── Autonomic nervous system — involuntary control of glands, smooth muscle, and cardiac muscle
-            ├── Sympathetic division
-            ├── Parasympathetic division
-            └── Enteric networks</pre>
-      <p><strong>Afferent arrives</strong> to the CNS; <strong>efferent exits</strong>.</p>
+      <h3>3. Lesion, drug, and genetic studies</h3>
+      <ul>
+        <li><strong>Lesion studies:</strong> damage tissue and test what function is lost. Can show necessity but not always the whole network.</li>
+        <li><strong>Drug studies:</strong> alter receptors, enzymes, or signaling molecules. Can show how chemical systems contribute to behavior.</li>
+        <li><strong>Genetic manipulations:</strong> alter gene expression to test whether a gene contributes to function or development.</li>
+      </ul>
 
-      <h3>Roles of the sympathetic and parasympathetic systems</h3>
+      <h3>4. Common brain myths</h3>
+      <ul>
+        <li>“We only use 10% of the brain.” False.</li>
+        <li>“People are left-brained or right-brained.” False; both hemispheres usually contribute.</li>
+        <li>“Adult brains cannot change.” False; neuroplasticity continues.</li>
+        <li>“Brain scans read thoughts.” False; they measure indirect signals.</li>
+      </ul>
+
+      <h3>5. Nervous system divisions</h3>
+      <ul>
+        <li><strong>CNS:</strong> brain + spinal cord.</li>
+        <li><strong>PNS:</strong> sensory and motor pathways.</li>
+        <li><strong>Sensory/afferent:</strong> toward the CNS.</li>
+        <li><strong>Motor/efferent:</strong> away from the CNS.</li>
+        <li><strong>Somatic:</strong> voluntary movement.</li>
+        <li><strong>Autonomic:</strong> involuntary functions; includes sympathetic and parasympathetic.</li>
+      </ul>
+
+      <h3>6. Sympathetic vs parasympathetic</h3>
       <table>
         <thead><tr><th>Sympathetic</th><th>Parasympathetic</th></tr></thead>
         <tbody>
-          <tr><td>Mobilizes the body for action (“fight or flight”).</td><td>Supports maintenance and recovery (“rest and digest”).</td></tr>
-          <tr><td>Increases heart rate and redirects resources to immediate action.</td><td>Slows heart rate and supports digestion.</td></tr>
-          <tr><td>Dilates pupils and bronchi.</td><td>Constricts pupils and supports gut activity.</td></tr>
+          <tr><td>Fight/flight, mobilizes resources</td><td>Rest/digest, supports recovery</td></tr>
+          <tr><td>Increases heart rate</td><td>Slows heart rate</td></tr>
+          <tr><td>Dilates pupils and bronchi</td><td>Constricts pupils; supports digestion</td></tr>
         </tbody>
       </table>
 
-      <h3>Horizontal section of the spinal cord</h3>
-      <pre>                         DORSAL / POSTERIOR
-                                  ↑
-           dorsal root (sensory fibers)    dorsal root (sensory fibers)
-                       \                         /
-                        [dorsal root ganglion]  [DRG]
-                              \                 /
-     ┌─────────────────────────────────────────────────────┐
-     │                 WHITE MATTER                        │
-     │       ┌───────────────┬───────────────┐              │
-     │       │ dorsal horn   │ dorsal horn   │              │
-     │       │ lateral horn* │ central canal │              │
-     │       │ ventral horn  │  GRAY MATTER │ ventral horn │
-     │                 WHITE MATTER                        │
-     └─────────────────────────────────────────────────���───┘
-                          ↓
-                   VENTRAL / ANTERIOR
-              ventral root (motor fibers) → spinal nerve</pre>
-      <p>The gray matter contains dorsal horns (sensory input), ventral horns (motor neurons), and lateral horns (autonomic neurons). White matter contains ascending and descending tracts.</p>
-
-      <h3>Divisions of the brain</h3>
-      <pre>Brain
-├── Cerebrum (telencephalon)
-│   ├── Cerebral cortex — higher-order cognition and perception
-│   ├── Basal ganglia — action selection and movement
-│   └── Limbic-related structures — emotion, motivation, memory
-├── Diencephalon
-│   ├── Thalamus — major relay station
-│   └── Hypothalamus — homeostasis and endocrine/autonomic control
-├── Brainstem
-│   ├── Midbrain — orienting and sensory/motor functions
-│   ├── Pons — relay and arousal
-│   └── Medulla — vital autonomic control
-└── Cerebellum — coordination, timing, balance, motor learning</pre>
-
-      <h3>Side view of the brain and the lobes</h3>
-      <pre>                         PARIETAL LOBE       OCCIPITAL LOBE
-                       _________________________________
-                      /                                 \
-   FRONTAL LOBE      /                                   \
-  ______________    /                                     \
- /              \__/                                       \
-|                                                        ____\
-|       TEMPORAL LOBE                                   /
- \_____________________________________________________/
-       ↑ front/anterior                         back/posterior ↑</pre>
+      <h3>7. Spinal cord</h3>
       <ul>
-        <li><strong>Frontal lobe:</strong> planning, decision-making, voluntary movement, executive function.</li>
-        <li><strong>Parietal lobe:</strong> body sensation and spatial processing.</li>
-        <li><strong>Temporal lobe:</strong> hearing, language, memory, emotion.</li>
-        <li><strong>Occipital lobe:</strong> visual processing.</li>
+        <li><strong>Gray matter:</strong> inner butterfly; dorsal horn = sensory input, ventral horn = motor neurons, lateral horn = autonomic neurons.</li>
+        <li><strong>White matter:</strong> outer tracts.</li>
+        <li><strong>Dorsal root:</strong> sensory fibers.</li>
+        <li><strong>Ventral root:</strong> motor fibers.</li>
       </ul>
 
-      <h2>3. Cells of the nervous system: neurons and glia</h2>
-      <h3>General cell and neuron</h3>
-      <pre>        ______________________________________
-       /                                      \
-      |   rough ER + ribosomes                |
-      |       _________       () mitochondrion |
-      |      / nucleus \                      |
-      |      \_________/   Golgi apparatus     |
-      |   smooth ER                           |
-      |   cytoplasm                           |
-       \______________________________________/
-             cell membrane (boundary)</pre>
-      <pre>incoming signals                              output
-      ↓                                            ↓
- dendrites → soma → axon hillock → axon → axon terminals</pre>
-      <p>The typical direction of signal flow is <strong>dendrites → soma → axon → terminals</strong>.</p>
-
-      <h3>Glia and myelin</h3>
-      <table>
-        <thead><tr><th>Cell type</th><th>Main roles</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Astrocytes</strong> (CNS)</td><td>Support neurons, regulate extracellular ions, help maintain the BBB.</td></tr>
-          <tr><td><strong>Oligodendrocytes</strong> (CNS)</td><td>Make myelin in the CNS.</td></tr>
-          <tr><td><strong>Schwann cells</strong> (PNS)</td><td>Make myelin in the PNS.</td></tr>
-          <tr><td><strong>Microglia</strong> (CNS)</td><td>Immune surveillance and debris removal.</td></tr>
-          <tr><td><strong>Ependymal cells</strong> (CNS)</td><td>Line ventricles and help maintain CSF.</td></tr>
-          <tr><td><strong>Satellite glia</strong> (PNS)</td><td>Support peripheral ganglia.</td></tr>
-        </tbody>
-      </table>
-      <p><strong>Myelin</strong> is formed by oligodendrocytes in the CNS and by Schwann cells in the PNS.</p>
-
-      <h3>Blood-brain barrier</h3>
-      <p>The BBB is a selective barrier between blood and brain tissue. It is built from endothelial cells joined by tight junctions, plus support from pericytes, the basement membrane, and astrocyte end-feet.</p>
-      <p><strong>Function:</strong> maintains a stable chemical environment for neurons and restricts many pathogens and toxins.</p>
-
-      <h2>4. Within cells: electrical properties of neurons</h2>
-      <h3>Mechanism for creating the resting potential</h3>
-      <p>A typical neuron’s resting membrane potential is about <strong>-70 mV</strong>. This results from unequal ion distributions and selective permeability, especially to K+.</p>
-      <ol>
-        <li>The Na+/K+ pump moves 3 Na+ out and 2 K+ in.</li>
-        <li>K+ leak channels allow K+ to leave the cell.</li>
-        <li>Negative charge accumulates inside, opposing further K+ efflux.</li>
-        <li>The balance of chemical and electrical gradients sets the resting membrane potential.</li>
-      </ol>
-
-      <h3>Action potential graph</h3>
-      <pre>Membrane
-potential
-  +30 mV                 peak
-      |                    /\
-   0  |                   /  \
-      |                  /    \
-−55  |·················●       \······ threshold
-−70  |____resting____/          \________
-      |                              \
-−80  |                                \___/ undershoot
-      +------------------------------------------------→ time
-            depolarization       repolarization
-                    |<-- absolute refractory -->|
-                                       |<-- relative refractory -->|</pre>
-      <p>Depolarization is a move toward less negative; hyperpolarization is a move more negative than resting.</p>
-
-      <h3>How an action potential is generated</h3>
-      <ol>
-        <li>Inputs depolarize the neuron; if threshold is reached near the axon initial segment, an action potential begins.</li>
-        <li>Voltage-gated Na+ channels open rapidly; Na+ rushes in.</li>
-        <li>Na+ channels inactivate and voltage-gated K+ channels open.</li>
-        <li>K+ leaves, causing repolarization.</li>
-        <li>K+ channels close slowly, producing a brief after-hyperpolarization.</li>
-        <li>The action potential propagates along the axon as adjacent membrane is depolarized.</li>
-      </ol>
-      <p>Action potentials are <strong>all-or-none</strong> once threshold is reached.</p>
-
-      <h3>Myelin and saltatory conduction</h3>
-      <p>Myelin insulates axons and reduces current leakage. In myelinated axons, the action potential jumps from node to node in a process called <strong>saltatory conduction</strong>. In unmyelinated axons, conduction occurs continuously along the membrane.</p>
-      <p>Saltatory conduction is faster and generally more energy-efficient.</p>
-
-      <h2>5. Between cells: chemical signaling</h2>
-      <h3>Reflex arc</h3>
-      <pre>Stimulus → sensory receptor → sensory (afferent) neuron → spinal cord → motor (efferent) neuron → effector → response</pre>
-      <p>A reflex is a rapid, coordinated response. The initial processing can occur in the spinal cord before the brain is involved.</p>
-
-      <h3>Synapse and synaptic signaling</h3>
-      <pre>Presynaptic neuron → action potential → Ca2+ entry → vesicle fusion → neurotransmitter release → receptor binding → postsynaptic response → clearance</pre>
-      <ol>
-        <li>An action potential reaches the presynaptic terminal.</li>
-        <li>Voltage-gated Ca2+ channels open and Ca2+ enters.</li>
-        <li>Neurotransmitter is released by exocytosis.</li>
-        <li>Neurotransmitter diffuses across the synaptic cleft.</li>
-        <li>It binds a receptor on the postsynaptic cell.</li>
-        <li>Postsynaptic channels or second-messenger pathways change activity.</li>
-        <li>Signal is terminated by reuptake, enzymatic breakdown, or diffusion.</li>
-      </ol>
-
-      <h3>Spatial and temporal summation</h3>
+      <h3>8. Major brain divisions</h3>
       <ul>
-        <li><strong>Spatial summation:</strong> multiple inputs from different synapses arrive together and combine.</li>
-        <li><strong>Temporal summation:</strong> repeated inputs from the same synapse arrive close together in time and combine.</li>
+        <li><strong>Cerebrum:</strong> perception, voluntary action, language, memory, planning.</li>
+        <li><strong>Diencephalon:</strong> thalamus and hypothalamus; relay and homeostasis.</li>
+        <li><strong>Brainstem:</strong> arousal, relay, and vital autonomic functions.</li>
+        <li><strong>Cerebellum:</strong> coordination, balance, timing, motor learning.</li>
       </ul>
 
-      <h3>Ionotropic receptors</h3>
-      <p><strong>Ionotropic receptors</strong> are ligand-gated ion channels. Neurotransmitter binding directly opens the channel. Responses are usually fast.</p>
+      <h3>9. Lobes</h3>
+      <ul>
+        <li><strong>Frontal:</strong> planning, executive control, movement.</li>
+        <li><strong>Parietal:</strong> body sensation, spatial processing.</li>
+        <li><strong>Temporal:</strong> hearing, language, memory, emotion.</li>
+        <li><strong>Occipital:</strong> vision.</li>
+      </ul>
 
-      <h3>Metabotropic receptors</h3>
-      <p><strong>Metabotropic receptors</strong> do not form ion channels themselves. They activate G proteins and second messenger systems, leading to slower but often longer-lasting effects.</p>
+      <h3>10. Neurons and glia</h3>
+      <ul>
+        <li><strong>Neuron:</strong> dendrites receive input, soma integrates, axon carries signal, terminals release transmitter.</li>
+        <li><strong>Oligodendrocytes:</strong> myelin in CNS.</li>
+        <li><strong>Schwann cells:</strong> myelin in PNS.</li>
+        <li><strong>Astrocytes:</strong> support neurons; help maintain BBB.</li>
+        <li><strong>Microglia:</strong> immune surveillance.</li>
+      </ul>
 
-      <div class="note"><strong>Study tip:</strong> redraw the diagrams from memory and explain each step aloud. Understanding the process is more important than memorizing isolated terms.</div>
+      <h3>11. Resting potential and action potentials</h3>
+      <ul>
+        <li>Resting potential is about <strong>-70 mV</strong>.</li>
+        <li>Na+/K+ pump maintains gradients: 3 Na+ out, 2 K+ in.</li>
+        <li>Threshold is reached; voltage-gated Na+ channels open; depolarization occurs.</li>
+        <li>Na+ channels inactivate; K+ channels open; repolarization occurs.</li>
+        <li>After-hyperpolarization may occur. Absolute refractory = cannot fire; relative refractory = stronger input needed.</li>
+      </ul>
+
+      <h3>12. Myelin and conduction</h3>
+      <p>Myelin insulates axons. In myelinated axons, action potentials jump between nodes of Ranvier; this is saltatory conduction. It is faster and more energy efficient than conduction in unmyelinated axons.</p>
+
+      <h3>13. Reflex arc and synaptic transmission</h3>
+      <ul>
+        <li><strong>Reflex arc:</strong> receptor → sensory neuron → spinal cord → motor neuron → effector.</li>
+        <li><strong>Synapse:</strong> action potential reaches terminal → Ca2+ channels open → vesicles release transmitter → transmitter binds receptor → postsynaptic response → signal ends by reuptake/diffusion/breakdown.</li>
+      </ul>
+
+      <h3>14. Summation and receptors</h3>
+      <ul>
+        <li><strong>Spatial summation:</strong> inputs from different synapses combine.</li>
+        <li><strong>Temporal summation:</strong> repeated inputs from one synapse combine in time.</li>
+        <li><strong>Ionotropic receptors:</strong> fast, ligand-gated ion channels.</li>
+        <li><strong>Metabotropic receptors:</strong> slower, G-protein and second-messenger signaling.</li>
+      </ul>
 
       <h2 id="practice">12 Short-Answer Practice Questions</h2>
-      <p>Try answering each in a few clear sentences or by drawing a labeled diagram.</p>
-
-      <div class="question"><h3>1. Compare CAT/CT, PET, and MRI.</h3><p>Briefly explain how each works, what it measures best, and one limitation.</p><details><summary>Check key points</summary><div class="answer"><ul><li>CAT/CT reconstructs anatomy from X-rays; useful for structural density differences, but uses ionizing radiation.</li><li>PET maps a radioactive tracer to measure a chosen metabolic or biochemical process; has lower spatial/temporal resolution and radiation exposure.</li><li>MRI uses magnetic fields and radiofrequency signals to construct detailed images without ionizing radiation; structural MRI does not directly measure neural firing.</li></ul></div></details></div>
-
-      <div class="question"><h3>2. Compare lesion, drug, and genetic studies.</h3><p>What does each method change, and what can its results tell us?</p><details><summary>Check key points</summary><div class="answer"><ul><li>Lesions disrupt tissue; impaired function suggests the damaged area or pathway may be necessary.</li><li>Drugs alter chemical signaling; effects reveal how a signaling system contributes to function.</li><li>Genetic manipulations alter gene expression; they test gene contribution, but compensation and off-target effects may complicate conclusions.</li></ul></div></details></div>
-
-      <div class="question"><h3>3. Correct two common myths about the brain.</h3><p>Name two myths and provide evidence-based corrections.</p><details><summary>Check key points</summary><div class="answer"><p>Examples: not only 10% of the brain is used; both hemispheres contribute to most tasks; not all brains are fixed; brain scans do not read thoughts directly; complex behaviors arise from networks.</p></div></details></div>
-
-      <div class="question"><h3>4. Diagram or describe the divisions of the nervous system.</h3><p>Include CNS, PNS, sensory/afferent, motor/efferent, somatic, and autonomic branches.</p><details><summary>Check key points</summary><div class="answer"><p>CNS = brain and spinal cord. PNS carries information between the CNS and body. Sensory/afferent signals travel toward the CNS; motor/efferent commands travel away. The motor division includes somatic (skeletal muscle) and autonomic (organs, glands, smooth and cardiac muscle).</p></div></details></div>
-
-      <div class="question"><h3>5. Contrast sympathetic and parasympathetic activity.</h3><p>Give their general roles and one example of how each affects the body.</p><details><summary>Check key points</summary><div class="answer"><p>Sympathetic activity mobilizes the body for demands (“fight or flight”), often increasing heart rate and reducing digestion. Parasympathetic supports maintenance and digestion (“rest and digest”), often slowing heart rate and supporting gut activity.</p></div></details></div>
-
-      <div class="question"><h3>6. Draw a transverse spinal-cord section and label key structures.</h3><p>Include dorsal and ventral sides, gray and white matter, horns, the central canal, and roots.</p><details><summary>Check key points</summary><div class="answer"><p>Gray matter is inner and butterfly-shaped. Dorsal horns receive sensory input; ventral horns contain motor neurons; lateral horns contain autonomic neurons in relevant segments. White matter surrounds it. Dorsal and ventral roots join to form the spinal nerve.</p></div></details></div>
-
-      <div class="question"><h3>7. Name major brain divisions and their general functions.</h3><p>Include cerebrum, diencephalon, brainstem, and cerebellum.</p><details><summary>Check key points</summary><div class="answer"><ul><li>Cerebrum: perception, voluntary action, memory, language, planning.</li><li>Diencephalon: thalamic relay and hypothalamic homeostasis/endocrine/autonomic regulation.</li><li>Brainstem: relay, arousal, and vital autonomic control.</li><li>Cerebellum: coordination, balance, timing, and motor learning.</li></ul></div></details></div>
-
-      <div class="question"><h3>8. Label the four cerebral lobes and give a general function for each.</h3><p>A simple side-view drawing is encouraged.</p><details><summary>Check key points</summary><div class="answer"><ul><li>Frontal: planning, executive function, voluntary movement.</li><li>Parietal: body sensation and spatial processing.</li><li>Temporal: hearing, language, memory, emotion.</li><li>Occipital: vision.</li></ul></div></details></div>
-
-      <div class="question"><h3>9. Identify neuron parts, action-potential direction, and myelinating glia.</h3><p>Include dendrites, soma, axon, terminals, and CNS/PNS myelin cells.</p><details><summary>Check key points</summary><div class="answer"><p>Typical flow: dendrites → soma → axon initial segment → axon → terminals. Oligodendrocytes myelinate CNS axons; Schwann cells myelinate PNS axons. Astrocytes support neurons and help maintain the BBB.</p></div></details></div>
-
-      <div class="question"><h3>10. Explain the resting potential and the stages of an action potential.</h3><p>Mention ion gradients, threshold, channels, and refractory periods.</p><details><summary>Check key points</summary><div class="answer"><ul><li>Unequal ion distributions and selective permeability—especially K+ leak—produce a negative resting voltage. The Na+/K+ pump maintains gradients.</li><li>Threshold opens voltage-gated Na+ channels; Na+ influx depolarizes.</li><li>Na+ channels inactivate and K+ channels open; K+ efflux repolarizes and may cause undershoot.</li><li>Absolute refractory: spike cannot start; relative refractory: stronger input needed.</li></ul></div></details></div>
-
-      <div class="question"><h3>11. How does myelin change action-potential conduction?</h3><p>Contrast saltatory conduction with conduction in an unmyelinated axon.</p><details><summary>Check key points</summary><div class="answer"><p>Myelin insulates axon segments and reduces current leakage. In myelinated axons, the action potential is regenerated at nodes of Ranvier and appears to jump from node to node (saltatory conduction). This is typically faster and more energy efficient than conduction in unmyelinated axons.</p></div></details></div>
-
-      <div class="question"><h3>12. Trace chemical synaptic signaling and distinguish summation and receptor types.</h3><p>Include the reflex arc, calcium, neurotransmitter release, spatial/temporal summation, and ionotropic/metabotropic receptors.</p><details><summary>Check key points</summary><div class="answer"><ul><li>Receptor → sensory/afferent neuron → spinal circuit → motor/efferent neuron → effector.</li><li>An action potential opens voltage-gated Ca2+ channels; Ca2+ triggers vesicle fusion and neurotransmitter release.</li><li>Spatial summation combines inputs from different synapses; temporal summation combines repeated inputs close together at one synapse.</li><li>Ionotropic receptors are ligand-gated channels with fast effects; metabotropic receptors activate G proteins and second messengers with slower, longer-lasting effects.</li></ul></div></details></div>
-
-      <h2 id="mock-exam">Mock Exam: 6 Short-Answer Questions</h2>
-      <p>Try these without notes. Answer in 2–4 sentences each.</p>
-
-      <div class="question"><h3>1. What is the difference between a neuron’s resting potential and an action potential?</h3><details><summary>Check key points</summary><div class="answer"><p>Resting potential is the baseline negative voltage (~−70 mV) due to ion gradients and leak channels. An action potential is a large, rapid depolarization and repolarization caused by voltage-gated Na+ and K+ channels.</p></div></details></div>
-
-      <div class="question"><h3>2. Explain how myelin changes conduction speed.</h3><details><summary>Check key points</summary><div class="answer"><p>Myelin reduces current leakage and allows the action potential to jump between nodes of Ranvier. This is saltatory conduction, which is faster and more energy-efficient than continuous conduction in unmyelinated axons.</p></div></details></div>
-
-      <div class="question"><h3>3. Compare ionotropic and metabotropic receptors.</h3><details><summary>Check key points</summary><div class="answer"><p>Ionotropic receptors are ligand-gated ion channels; binding opens the channel directly and the response is fast. Metabotropic receptors activate G proteins and second messenger systems; responses are slower but can be longer-lasting and more widespread.</p></div></details></div>
-
-      <div class="question"><h3>4. Describe the role of the blood-brain barrier.</h3><details><summary>Check key points</summary><div class="answer"><p>The BBB protects the brain by limiting entry of many blood-borne substances, pathogens, and toxins while allowing selective transport of nutrients and essential molecules. It is made of endothelial tight junctions supported by astrocytes and pericytes.</p></div></details></div>
-
-      <div class="question"><h3>5. Differentiate sympathetic and parasympathetic nervous system function.</h3><details><summary>Check key points</summary><div class="answer"><p>Sympathetic activity mobilizes the body for stress or action (“fight or flight”), typically increasing heart rate and reducing digestive activity. Parasympathetic activity supports rest and recovery (“rest and digest”), typically slowing heart rate and increasing digestive activity.</p></div></details></div>
-
-      <div class="question"><h3>6. Explain the process of synaptic transmission.</h3><details><summary>Check key points</summary><div class="answer"><p>An action potential reaches the presynaptic terminal, opens voltage-gated Ca2+ channels, Ca2+ triggers vesicle fusion, and neurotransmitter is released. The transmitter crosses the synaptic cleft, binds receptors, and the postsynaptic cell changes its electrical or chemical activity. Then the signal ends by reuptake, diffusion, or enzymatic breakdown.</p></div></details></div>
-
-      <h2 id="diagrams">Diagram Review Checklist</h2>
-      <div class="diagram-box">
-        <p><strong>Neuron</strong> — Label: dendrites, soma, axon hillock, axon, myelin, nodes of Ranvier, axon terminals.</p>
-        <pre> dendrites → soma → axon hillock → axon (myelinated) → terminals</pre>
-      </div>
-
-      <div class="diagram-box">
-        <p><strong>Spinal cord</strong> — Label: dorsal horn, ventral horn, gray matter, white matter, central canal, dorsal root, ventral root, spinal nerve.</p>
-        <pre>             Dorsal            Ventral
-             root             root
-               |                |
-   dorsal horn  gray matter  ventral horn
-       \                |                /
-        \__ white matter ________________/</pre>
-      </div>
-
-      <div class="diagram-box">
-        <p><strong>Action potential</strong> — Label: depolarization, threshold, peak, repolarization, hyperpolarization, absolute refractory period, relative refractory period.</p>
-        <pre>mV
-+30        peak
-  |\
-  | \
-0 |  \
-  |   \____ repolarization
--55 |    ● threshold
--70 |____resting___________
-            \_____ hyperpolarization</pre>
-      </div>
-
-      <div class="diagram-box">
-        <p><strong>Synapse</strong> — Label: presynaptic terminal, synaptic vesicle, Ca2+ channel, synaptic cleft, neurotransmitter, postsynaptic receptor, postsynaptic membrane.</p>
-        <pre>presynaptic terminal → Ca2+ influx → vesicle release → cleft → receptor → postsynaptic cell</pre>
-      </div>
-
-      <div class="note"><strong>Quick self-check:</strong> can you label each diagram without looking? If yes, you are ready for the exam. If not, redraw the diagram from memory and explain the parts aloud.</div>
-    </div>
-  </div>
-</body>
-</html>
