@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Module 2 Practice Test</title><style>
+body{margin:0;font:16px/1.55 Arial,sans-serif;background:#f4f7fb;color:#172033}main{max-width:900px;margin:auto;padding:24px 18px 60px}nav a{color:#2463a9}.card{background:#fff;border:1px solid #dce5f0;border-radius:12px;padding:20px;margin:16px 0}.question{margin:18px 0;padding:12px;border-left:4px solid #2463a9}.blank{display:inline-block;min-width:130px;border:0;border-bottom:2px solid #777;text-align:center;background:transparent}.row{margin:7px 0}button{padding:8px 12px;border:0;border-radius:7px;background:#2463a9;color:#fff;cursor:pointer}.correct{color:#13733a;font-weight:bold}.wrong{color:#b3261e;font-weight:bold}.key{background:#edf4ff;padding:12px;border-radius:8px}
+</style></head><body><main>
+<nav><a href="index.html">← Home</a> · <a href="module2-study-center.html">Study center</a> · <a href="module2-flashcards.html">Flashcards</a> · <a href="module2-mock-exam.html">Mock exam</a></nav>
+<section class="card"><h1>Module 2 Practice Test</h1><p>Complete the blanks and select True or False.</p></section>
+<section class="card"><h2>A. Fill in the blank</h2>
+<div class="question">1. The ________ stream helps identify objects and faces.<br><input class="blank" data-answer="ventral"></div>
+<div class="question">2. The ossicles transmit sound from the eardrum to the ________.<br><input class="blank" data-answer="oval window"></div>
+<div class="question">3. Sharp, relatively fast pain is carried largely by ________ fibers.<br><input class="blank" data-answer="A-delta"></div>
+<div class="question">4. Salt and sour taste involve ion-based transduction; sweet and umami use ________ receptors.<br><input class="blank" data-answer="T1R"></div>
+<div class="question">5. The ________ helps coordinate movement timing and accuracy.<br><input class="blank" data-answer="cerebellum"></div>
+<div class="question">6. Parkinson’s disease is strongly associated with loss of ________ neurons.<br><input class="blank" data-answer="dopamine"></div>
+<div class="question">7. Maintaining stability by anticipating changing demands is called ________.<br><input class="blank" data-answer="allostasis"></div>
+<div class="question">8. Osmotic thirst is triggered by increased concentration of body ________.<br><input class="blank" data-answer="fluids"></div>
+<div class="question">9. Light is a major ________, or environmental time cue.<br><input class="blank" data-answer="zeitgeber"></div>
+<div class="question">10. Caffeine promotes alertness partly by blocking ________ receptors.<br><input class="blank" data-answer="adenosine"></div>
+<button onclick="checkBlanks()">Check blanks</button><p id="blankResult"></p></section>
+<section class="card"><h2>B. True or False</h2>
+<div id="tf">
+<div class="row">1. Nasal retinal fibers cross at the optic chiasm. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+<div class="row">2. Rods provide the sharpest color vision. <button onclick="answer(this,false)">True</button> <button onclick="answer(this,true)">False</button></div>
+<div class="row">3. The dorsal column pathway carries pain and temperature. <button onclick="answer(this,false)">True</button> <button onclick="answer(this,true)">False</button></div>
+<div class="row">4. Huntington’s disease commonly produces involuntary choreiform movements. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+<div class="row">5. Hypovolemic thirst occurs after major loss of blood volume or fluids. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+<div class="row">6. Leptin is a major signal that usually reflects stored body energy. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+<div class="row">7. Benzodiazepines reduce neural activity partly through GABA-A receptors. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+<div class="row">8. Orexin normally promotes wakefulness. <button onclick="answer(this,true)">True</button> <button onclick="answer(this,false)">False</button></div>
+</div></section>
+<section class="card"><details><summary>Answer key</summary><div class="key"><p><b>Fill-ins:</b> ventral; oval window; A-delta; T1R; cerebellum; dopamine; allostasis; fluids; zeitgeber; adenosine.</p><p><b>True/false:</b> 1 T, 2 F, 3 F, 4 T, 5 T, 6 T, 7 T, 8 T.</p></div></details></section>
+<script>
+function checkBlanks(){let all=document.querySelectorAll('.blank'),score=0;all.forEach(x=>{let ok=x.value.trim().toLowerCase()==x.dataset.answer;x.className='blank '+(ok?'correct':'wrong');if(ok)score++});document.getElementById('blankResult').textContent=score+' of '+all.length+' correct.'}
+function answer(btn,isCorrect){let p=btn.parentNode;p.querySelectorAll('button').forEach(b=>b.style.background='#2463a9');btn.style.background=isCorrect?'#13733a':'#b3261e';btn.textContent+=(isCorrect?' ✓':' ×')}
+</script></main></body></html>
